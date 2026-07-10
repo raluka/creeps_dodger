@@ -4,3 +4,6 @@
 .DS_Store
 .editorconfig
 .gitignore
+.gitattributes
+project.godot
+player.gd.uid
