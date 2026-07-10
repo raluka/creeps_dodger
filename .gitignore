@@ -6,4 +6,4 @@
 .gitignore
 .gitattributes
 project.godot
-player.gd.uid
+*.gd.uid
