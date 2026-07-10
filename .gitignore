@@ -5,5 +5,5 @@
 .editorconfig
 .gitignore
 .gitattributes
-project.godot
 *.gd.uid
+project.godot

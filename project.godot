@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="creep_avoider"
-run/main_scene="uid://davgg0k0vjytp"
+run/main_scene="uid://b4bmglvjrl1df"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
