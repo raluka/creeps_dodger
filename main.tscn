@@ -7,13 +7,21 @@
 
 [sub_resource type="Curve2D" id="Curve2D_lquwl"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, -144, 0, 0, 0, 0, 2168, -128, 0, 0, 0, 0, 2168, 1464, 0, 0, 0, 0, -16, 1464, 0, 0, 0, 0, 0, -144)
+"points": PackedVector2Array(0, 0, 0, 0, 53.644466, 16, 0, 0, 0, 0, 285.7927, 16, 0, 0, 0, 0, 285.7927, 712, 0, 0, 0, 0, -16, 720, 0, 0, 0, 0, -16, 8)
 }
 point_count = 5
 
 [node name="Main" type="Node" unique_id=902232231]
 script = ExtResource("1_h2yge")
 mob_scene = ExtResource("2_1bvp3")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1857671690]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
 [node name="Player" parent="." unique_id=364276918 instance=ExtResource("1_ig7tw")]
 
@@ -30,11 +38,12 @@ one_shot = true
 position = Vector2(240, 450)
 
 [node name="MobPath" type="Path2D" parent="." unique_id=1168693716]
+position = Vector2(19.568596, 0)
+scale = Vector2(1.7230371, 1)
 curve = SubResource("Curve2D_lquwl")
 
 [node name="MobSpawnLocation" type="PathFollow2D" parent="MobPath" unique_id=1255024147]
-position = Vector2(0, -144)
-rotation = 0.00737994
+position = Vector2(53.644466, 16)
 
 [node name="HUD" parent="." unique_id=1538187000 instance=ExtResource("4_1bvp3")]
 
