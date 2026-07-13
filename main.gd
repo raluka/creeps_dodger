@@ -44,6 +44,7 @@ func _on_mob_timer_timeout() -> void:
 
 func _on_score_timer_timeout() -> void:
 	score += 1
+	$MobTimer.wait_time = max(0.5, 1.0 - score * 0.01)
 	$HUD.update_score(score)
 
 func _on_start_timer_timeout() -> void:
